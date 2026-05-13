@@ -8,6 +8,7 @@ import { WhatsIncluded } from "@/components/proposal/sections/whats-included";
 import { AddOns } from "@/components/proposal/sections/add-ons";
 import { Terms } from "@/components/proposal/sections/terms";
 import { NotIncluded } from "@/components/proposal/sections/not-included";
+import { NextSteps } from "@/components/proposal/sections/next-steps";
 
 export default function ProposalPage() {
   useEffect(() => {
@@ -27,6 +28,7 @@ export default function ProposalPage() {
       <AddOns />
       <Terms />
       <NotIncluded />
+      <NextSteps />
     </div>
   );
 }
