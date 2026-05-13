@@ -5,6 +5,7 @@ import { Tiers } from "@/components/proposal/sections/tiers";
 import { Comparison } from "@/components/proposal/sections/comparison";
 import { Hosting } from "@/components/proposal/sections/hosting";
 import { WhatsIncluded } from "@/components/proposal/sections/whats-included";
+import { AddOns } from "@/components/proposal/sections/add-ons";
 
 export default function ProposalPage() {
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function ProposalPage() {
       <Comparison />
       <Hosting />
       <WhatsIncluded />
+      <AddOns />
     </div>
   );
 }
