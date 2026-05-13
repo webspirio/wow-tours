@@ -292,7 +292,7 @@ export const ADD_ONS = [
   { service: "Dev-retainer без хостингу (5 годин/міс на правки + консультації)", price: "€280/міс" },
   { service: "Виправлення / правки поза тарифом і ретейнером", price: "€30/год" },
   { service: "Міграція існуючого сайту на нову платформу", price: "від €1 200" },
-  { service: "Налаштування Google Ads / Meta Ads (з нашим маркетологом)", price: "€600–900 разово" },
+  { service: "Налаштування Google Ads / Meta Ads (з нашим партнером)", price: "€600–900 разово" },
 ];
 
 export const UNIVERSAL_BENEFITS = [
