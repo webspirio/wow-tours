@@ -17,8 +17,7 @@ export default function Landing() {
   return (
     <BookingPrefillProvider>
       <div id="top" className="min-h-screen">
-        <DemoBanner />
-        <Header />
+        <Header topSlot={<DemoBanner />} />
         <main>
           <Hero />
           <QuickInfo />
