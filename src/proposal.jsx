@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Hero } from "@/components/proposal/sections/hero";
 import { Framing } from "@/components/proposal/sections/framing";
 import { Tiers } from "@/components/proposal/sections/tiers";
+import { Comparison } from "@/components/proposal/sections/comparison";
 
 export default function ProposalPage() {
   useEffect(() => {
@@ -15,6 +16,7 @@ export default function ProposalPage() {
       <Hero />
       <Framing />
       <Tiers />
+      <Comparison />
     </div>
   );
 }
