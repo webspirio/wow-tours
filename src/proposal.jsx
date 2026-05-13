@@ -3,6 +3,7 @@ import { Hero } from "@/components/proposal/sections/hero";
 import { Framing } from "@/components/proposal/sections/framing";
 import { Tiers } from "@/components/proposal/sections/tiers";
 import { Comparison } from "@/components/proposal/sections/comparison";
+import { Hosting } from "@/components/proposal/sections/hosting";
 
 export default function ProposalPage() {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function ProposalPage() {
       <Framing />
       <Tiers />
       <Comparison />
+      <Hosting />
     </div>
   );
 }
