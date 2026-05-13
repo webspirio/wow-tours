@@ -125,7 +125,7 @@ export function Tiers() {
         <SectionHeader
           number="2"
           title="Чотири тарифи"
-          subtitle="Кожен включає все з попереднього. CMS Edition — наш рекомендований старт для більшості туроператорів."
+          subtitle="Кожен включає все з попереднього. CMS Edition — наш рекомендований старт."
         />
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 items-stretch">
