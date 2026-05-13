@@ -7,6 +7,7 @@ import { Hosting } from "@/components/proposal/sections/hosting";
 import { WhatsIncluded } from "@/components/proposal/sections/whats-included";
 import { AddOns } from "@/components/proposal/sections/add-ons";
 import { Terms } from "@/components/proposal/sections/terms";
+import { NotIncluded } from "@/components/proposal/sections/not-included";
 
 export default function ProposalPage() {
   useEffect(() => {
@@ -25,6 +26,7 @@ export default function ProposalPage() {
       <WhatsIncluded />
       <AddOns />
       <Terms />
+      <NotIncluded />
     </div>
   );
 }
