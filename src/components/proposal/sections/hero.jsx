@@ -2,11 +2,7 @@ import { motion } from "motion/react";
 import { ArrowDown, CalendarCheck, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { PROPOSAL_META, TIERS } from "@/lib/proposal-data";
-
-function formatPrice(n) {
-  return `€${n.toLocaleString("uk-UA").replace(/ /g, " ")}`;
-}
+import { PROPOSAL_META, TIERS, formatPrice } from "@/lib/proposal-data";
 
 function KpiChip({ tier }) {
   return (

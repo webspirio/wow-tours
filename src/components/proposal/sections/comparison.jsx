@@ -27,11 +27,12 @@ export function Comparison() {
           <table className="w-full min-w-[760px] border-collapse text-sm">
             <thead>
               <tr className="bg-paper">
-                <th className="sticky left-0 z-10 bg-paper border-b border-border px-4 py-3 text-left font-semibold text-ink">
+                <th scope="col" className="sticky left-0 z-10 bg-paper border-b border-border px-4 py-3 text-left font-semibold text-ink">
                   Можливість
                 </th>
                 {TIERS.map((t, i) => (
                   <th
+                    scope="col"
                     key={t.id}
                     className={cn(
                       "border-b border-border px-4 py-3 text-center font-semibold text-ink",
@@ -65,7 +66,7 @@ function Group({ group }) {
       <tr>
         <td
           colSpan={TIERS.length + 1}
-          className="sticky left-0 bg-ink/[0.03] px-4 py-2 text-xs font-semibold uppercase tracking-wider text-mute"
+          className="sticky left-0 z-10 bg-ink/[0.03] px-4 py-2 text-xs font-semibold uppercase tracking-wider text-mute"
         >
           {group.label}
         </td>

@@ -1,22 +1,27 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import './styles/globals.css'
 import Landing from './landing.jsx'
 import ProposalPage from './proposal.jsx'
 
-function getRoute() {
-  const hash = window.location.hash.replace(/^#/, '');
+function parseRoute(rawHash) {
+  const hash = rawHash.replace(/^#/, '');
   if (hash.startsWith('/proposal')) return 'proposal';
-  return 'landing';
+  if (hash === '' || hash === '/') return 'landing';
+  return null;
 }
 
 function Root() {
-  const [route, setRoute] = useState(getRoute());
+  const [route, setRoute] = useState(() => parseRoute(window.location.hash) ?? 'landing');
+  const routeRef = useRef(route);
+  routeRef.current = route;
 
   useEffect(() => {
     const onHashChange = () => {
-      setRoute(getRoute());
+      const next = parseRoute(window.location.hash);
+      if (next === null || next === routeRef.current) return;
       window.scrollTo(0, 0);
+      setRoute(next);
     };
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);

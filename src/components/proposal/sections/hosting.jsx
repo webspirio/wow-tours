@@ -30,17 +30,17 @@ export function Hosting() {
           <table className="w-full min-w-[600px] border-collapse text-sm">
             <thead>
               <tr className="bg-paper">
-                <th className="border-b border-border px-4 py-3 text-left font-semibold text-ink">
+                <th scope="col" className="border-b border-border px-4 py-3 text-left font-semibold text-ink">
                   Що включено
                 </th>
                 {HOSTING_PLANS.map((p) => (
-                  <th key={p.plan} className="border-b border-border px-4 py-3 text-center font-semibold text-ink">
+                  <th scope="col" key={p.plan} className="border-b border-border px-4 py-3 text-center font-semibold text-ink">
                     {p.plan}
                   </th>
                 ))}
               </tr>
               <tr className="bg-paper/60">
-                <th className="border-b border-border px-4 py-2 text-left text-xs uppercase tracking-wider text-mute">
+                <th scope="row" className="border-b border-border px-4 py-2 text-left text-xs uppercase tracking-wider text-mute">
                   Ціна за місяць
                 </th>
                 {HOSTING_PLANS.map((p) => (

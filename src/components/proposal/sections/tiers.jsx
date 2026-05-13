@@ -10,13 +10,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
-import { TIERS } from "@/lib/proposal-data";
+import { TIERS, formatPrice } from "@/lib/proposal-data";
 
 const ICON_MAP = { Rocket, LayoutDashboard, Workflow, Layers };
-
-function formatPrice(n) {
-  return `€${n.toLocaleString("uk-UA").replace(/ /g, " ")}`;
-}
 
 function TierCard({ tier, index }) {
   const Icon = ICON_MAP[tier.icon] || Rocket;

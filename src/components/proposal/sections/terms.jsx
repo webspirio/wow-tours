@@ -72,7 +72,7 @@ export function Terms() {
       </div>
 
       <p className="mt-6 text-sm leading-relaxed text-mute">
-        <span className="font-semibold text-ink">Гарантійний період:</span> {TERMS.warranty.replace(/^Гарантійний період: /, "")}
+        <span className="font-semibold text-ink">Гарантійний період:</span> {TERMS.warranty}
       </p>
     </section>
   );

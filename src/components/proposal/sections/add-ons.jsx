@@ -18,8 +18,8 @@ export function AddOns() {
           <table className="w-full border-collapse text-sm">
             <thead className="bg-paper">
               <tr>
-                <th className="border-b border-border px-5 py-3 text-left font-semibold text-ink">Послуга</th>
-                <th className="border-b border-border px-5 py-3 text-right font-semibold text-ink">Ціна</th>
+                <th scope="col" className="border-b border-border px-5 py-3 text-left font-semibold text-ink">Послуга</th>
+                <th scope="col" className="border-b border-border px-5 py-3 text-right font-semibold text-ink">Ціна</th>
               </tr>
             </thead>
             <tbody>
