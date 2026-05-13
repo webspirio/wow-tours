@@ -75,7 +75,7 @@ export const ITINERARY = [
     title: "Золоте кільце",
     icon: "💧",
     desc: "Гейзер Strokkur, водоспад Gullfoss, національний парк Þingvellir.",
-    photo: localPhoto("geyser.jpg"),
+    photo: localPhoto("geyser.jpeg"),
     details:
       "Виїзд о 9:00. Перша зупинка — національний парк Þingvellir, де зустрічаються Євразійська та Північно-Американська тектонічні плити. Далі — поле гейзерів, де Strokkur вивергається кожні 6–10 хвилин. Третя зупинка — водоспад Gullfoss, один з найпотужніших у Європі. Повернення в Рейк'явік близько 18:00.",
     highlights: [
