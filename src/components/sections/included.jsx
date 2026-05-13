@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Check, X } from "lucide-react";
 import { INCLUDED, NOT_INCLUDED } from "@/lib/tour-data";
+import { cn } from "@/lib/utils";
 
 function List({ items, icon: Icon, iconClass, title }) {
   return (
@@ -16,7 +17,7 @@ function List({ items, icon: Icon, iconClass, title }) {
             transition={{ duration: 0.4, delay: idx * 0.06 }}
             className="flex items-start gap-3 py-3 border-b border-border last:border-0"
           >
-            <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${iconClass}`}>
+            <span className={cn("flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center", iconClass)}>
               <Icon className="w-4 h-4" strokeWidth={3} />
             </span>
             <div className="flex-1">

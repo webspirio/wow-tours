@@ -29,7 +29,6 @@ export function Booking() {
   const onSubmit = async (data) => {
     // UI-only — у продакшені сюди йде Cloudflare Function → Telegram + email
     await new Promise((r) => setTimeout(r, 600));
-    console.log("Lead submitted:", data);
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);

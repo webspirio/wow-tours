@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { NumberTicker } from "@/components/effects/number-ticker";
 import { PRICES } from "@/lib/tour-data";
+import { cn } from "@/lib/utils";
 
 export function Prices() {
   return (
@@ -50,10 +51,10 @@ export function Prices() {
                         const isBest = price === min;
                         return (
                           <div key={window.label} className="flex items-center justify-between">
-                            <span className={`text-sm ${isBest ? "font-semibold text-ink" : "text-mute"}`}>
+                            <span className={cn("text-sm", isBest ? "font-semibold text-ink" : "text-mute")}>
                               {window.label}
                             </span>
-                            <span className={`text-lg font-bold tabular-nums ${isBest ? "text-success" : "text-ink"}`}>
+                            <span className={cn("text-lg font-bold tabular-nums", isBest ? "text-success" : "text-ink")}>
                               €<NumberTicker value={price} delay={idx * 0.1 + wIdx * 0.05} />
                               {isBest && <span className="ml-1.5 text-xs font-medium text-success">мін</span>}
                             </span>
