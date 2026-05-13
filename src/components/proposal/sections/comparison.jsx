@@ -87,7 +87,8 @@ function Group({ group }) {
                 i === RECOMMENDED_INDEX && "bg-violet/5",
                 row.highlight && "font-semibold text-ink",
                 v === "✓" && "text-success",
-                v === "—" && "text-mute-soft"
+                v === "—" && "text-mute-soft",
+                v === "опційно" && "text-mute italic text-xs"
               )}
             >
               {v}
