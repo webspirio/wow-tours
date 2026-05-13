@@ -283,7 +283,7 @@ export const HOSTING_FEATURE_ROWS = [
 ];
 
 export const ADD_ONS = [
-  { service: "Додаткова мова інтерфейсу (після першої)", price: "€1 500 за мову" },
+  { service: "Додаткова мова інтерфейсу (після першої)", price: "€800 за мову" },
   { service: "Реальне онлайн-бронювання квитків прямо на сайті", price: "€4 000" },
   { service: "Telegram-бот для клієнтів (статус заявки, документи)", price: "€1 800" },
   { service: "Інтеграція з вашою CRM / ERP (HubSpot, Pipedrive, KeyCRM, Salesforce тощо)", price: "від €2 500" },
