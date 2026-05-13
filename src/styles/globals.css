@@ -75,3 +75,19 @@ body {
   }
   html { scroll-behavior: auto; }
 }
+
+/* Proposal page — print */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .print\:hidden { display: none !important; }
+
+  article, table { break-inside: avoid; page-break-inside: avoid; }
+
+  table { font-size: 0.72rem; }
+
+  section { background: transparent !important; }
+}
