@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@theme {
+  /* Brand colors — WOW Original palette */
+  --color-violet: #7c3aed;
+  --color-violet-dark: #5b21b6;
+  --color-pink: #ec4899;
+  --color-pink-dark: #be185d;
+  --color-yellow: #fbbf24;
+  --color-yellow-dark: #d97706;
+  --color-ink: #1a1a2e;
+  --color-ink-soft: #2a2a44;
+  --color-paper: #fafaf8;
+  --color-mute: #6b7280;
+  --color-mute-soft: #9ca3af;
+  --color-border: #e5e7eb;
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+
+  /* Typography */
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-body: "DM Sans", system-ui, -apple-system, sans-serif;
+
+  /* Shadows */
+  --shadow-violet: 0 4px 30px rgb(124 58 237 / 0.25);
+  --shadow-pink: 0 4px 30px rgb(236 72 153 / 0.25);
+  --shadow-yellow: 0 4px 30px rgb(251 191 36 / 0.4);
+
+  /* Animation */
+  --animate-aurora: aurora 60s linear infinite;
+  --animate-marquee: marquee var(--duration) linear infinite;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+}
+
+@keyframes aurora {
+  from { background-position: 50% 50%, 50% 50%; }
+  to { background-position: 350% 50%, 350% 50%; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap))); }
+}
+
+@keyframes marquee-vertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-100% - var(--gap))); }
+}
+
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to { background-position: 200% 0; }
+}
+
+/* Base */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-paper);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reduce motion when user prefers */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
