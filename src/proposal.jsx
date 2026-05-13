@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Hero } from "@/components/proposal/sections/hero";
 import { Framing } from "@/components/proposal/sections/framing";
+import { Tiers } from "@/components/proposal/sections/tiers";
 
 export default function ProposalPage() {
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function ProposalPage() {
     <div className="min-h-screen bg-paper text-ink antialiased">
       <Hero />
       <Framing />
+      <Tiers />
     </div>
   );
 }
