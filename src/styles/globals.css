@@ -25,9 +25,10 @@
   /* Shadows */
   --shadow-violet: 0 4px 30px rgb(124 58 237 / 0.25);
   --shadow-pink: 0 4px 30px rgb(236 72 153 / 0.25);
-  --shadow-yellow: 0 4px 30px rgb(251 191 36 / 0.4);
+  --shadow-yellow: 0 4px 30px rgb(251 191 36 / 0.4); /* higher alpha intentional: yellow has higher luminance */
 
   /* Animation */
+  --duration: 30s;
   --animate-aurora: aurora 60s linear infinite;
   --animate-marquee: marquee var(--duration) linear infinite;
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
@@ -72,4 +73,5 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+  html { scroll-behavior: auto; }
 }
