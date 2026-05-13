@@ -6,7 +6,7 @@ import ProposalPage from './proposal.jsx'
 
 function getRoute() {
   const hash = window.location.hash.replace(/^#/, '');
-  if (hash === '/proposal') return 'proposal';
+  if (hash.startsWith('/proposal')) return 'proposal';
   return 'landing';
 }
 
@@ -16,7 +16,7 @@ function Root() {
   useEffect(() => {
     const onHashChange = () => {
       setRoute(getRoute());
-      window.scrollTo({ top: 0, behavior: 'instant' });
+      window.scrollTo(0, 0);
     };
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);
