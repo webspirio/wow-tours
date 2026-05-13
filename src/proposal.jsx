@@ -9,6 +9,7 @@ import { AddOns } from "@/components/proposal/sections/add-ons";
 import { Terms } from "@/components/proposal/sections/terms";
 import { NotIncluded } from "@/components/proposal/sections/not-included";
 import { NextSteps } from "@/components/proposal/sections/next-steps";
+import { Footer } from "@/components/proposal/sections/footer";
 
 export default function ProposalPage() {
   useEffect(() => {
@@ -29,6 +30,7 @@ export default function ProposalPage() {
       <Terms />
       <NotIncluded />
       <NextSteps />
+      <Footer />
     </div>
   );
 }
