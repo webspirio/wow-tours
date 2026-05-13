@@ -15,7 +15,7 @@ export const PRICES = {
     { label: "Через 7 днів", days: 7 },
     { label: "Через 14 днів", days: 14 },
   ],
-  // EUR per person — mock data, would come from Travelpayouts API
+  // EUR per person — full tour price (flight + accommodation + return)
   table: {
     "Київ": [420, 380, 410],
     "Львів": [395, 360, 390],

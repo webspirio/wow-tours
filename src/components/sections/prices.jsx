@@ -23,7 +23,7 @@ export function Prices() {
             Вартість змінюється щодня. Обирайте місто вильоту і дату, що влізе у бюджет.
           </p>
           <Badge variant="success" className="mt-4">
-            ↻ Оновлено {PRICES.lastUpdate} · Travelpayouts
+            ↻ Оновлено {PRICES.lastUpdate}
           </Badge>
         </motion.div>
 
@@ -70,7 +70,7 @@ export function Prices() {
         </div>
 
         <p className="text-xs text-mute text-center mt-8 max-w-2xl mx-auto">
-          * Ціни вказані за людину, в одну сторону. Повна вартість туру (квиток + готель + програма) розраховується індивідуально на консультації.
+          * Ціни вказані за повний тур: виліт, проживання та повернення.
         </p>
       </div>
     </section>
